@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO DO LIST -Julian</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+         h1 {
+            color:transparent;
+            font-size: 8em; 
+            text-align: center; 
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfx5fjUs0ZFQgKSwIemdRt3hWUFx25LlTCr8kNhKbwB8jfPxfsvh6Z42Ca6N2fa0YGGIE&usqp=CAU');
+            -webkit-background-clip: text;
+            background-clip: text;
+            
+         }
+    </style>
+
+
+  
+</head>
+
+<body>
+
+    <div class="background-container"></div>
+
+<div id="contenido">
+    <div class="container">
+
+        <h1>TO DO LIST</h1>
+
+        <div class="row">
+            <div class="six columns">
+                <form id="formulario">
+                    <h2>Nuevo Tweet</h2>
+                    <label for="tweet">Escribe tu nuevo tweet:</label>
+                    
+                    <textarea id="tweet" class="u-full-width" placeholder="Escribe tu tweet aquí"></textarea>
+                    <input type="submit" class="button-primary u-full-width" value="Agregar">
+                </form>
+            </div>
+            <div class="six columns">
+                <div class="tweet-container">
+                    
+                    <h2>Tweets</h2>
+                    <li data-tweet-id="ID_DEL_TWEET">
+                        <span class="tweet-texto">Contenido del tweet</span>
+                        <a href="#" class="borrar-tweet">X</a>
+                    </li>
+
+                    <ul id="lista-tweets" class="tweet-list"></ul>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> <!--#contenido-->
+
+<script src="script.js"></script>
+</body>
+</html>
